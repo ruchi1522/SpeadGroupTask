@@ -18,7 +18,7 @@ const CatBreedDetails = () => {
 
    const breeds = catData.breeds as Breed[];
 
-    // Set the populated breeds array and mark loading as false
+    // Set the populated breeds array and loading as false
     setAllBreeds(breeds);
     setIsLoading(false);
   }, [catData]);
@@ -36,7 +36,7 @@ const CatBreedDetails = () => {
                 <p>Breed Temperament: {breed.temperament}</p>
                 <p>Life Span: {breed.life_span}</p>
                 <p>Breed Weight: {breed.weight.metric} kg</p>
-                <p>Breed Height: {catData.height}</p>
+                {/* <p>Breed Height: {catData.height}</p> */}
 
               </div>
             ))}

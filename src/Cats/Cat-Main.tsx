@@ -55,7 +55,7 @@ export default function CatsMain() {
           fetchCatDetails(data);
         }
       } else {
-        // Handle error if needed
+        
       }
     } catch (error) {
       // Handle error if needed
@@ -70,7 +70,7 @@ export default function CatsMain() {
           const catdetaildata: CatDetails = await response.json();
           return catdetaildata;
         } else {
-          // Handle error if needed
+          
           return null;
         }
       });
@@ -81,13 +81,13 @@ export default function CatsMain() {
       console.log(filteredCatDetails);
       setLoading(false); 
     } catch (error) {
-      // Handle error if needed
+     
     }
   }
 
   const handleImageClick = (catData: CatDetails) => {
 
-    // Navigate to the CatDetail page and pass catData as state
+    // Navigate to the Cat breeds Details page and pass catData as state
     navigate(`/cat/${catData.id}`, { state: { catData } });
   };
 
